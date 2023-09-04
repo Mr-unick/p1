@@ -1,0 +1,127 @@
+#alluser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    flex-direction: row-reverse;
+}
+
+.divv {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: -3px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    height: 35px;
+    width: 30vw;
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.search input ::placeholder {
+    margin-left: 10px;
+}
+
+#card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 5px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+#Discription {
+    font-weight: 500;
+    color: #141414;
+
+}
+
+.dis {
+    min-height: 80px;
+}
+
+#Tittle {
+    font-weight: 900;
+    color: #757575;
+    margin-top: 5px;
+
+}
+
+.main button {
+    height: 35px;
+    width: 70px;
+    border: none;
+    color: #fff;
+    background-color: #3484f0;
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media (max-width:768px) {
+
+    #card {
+        min-width: 174px;
+
+    }
+
+    #alluser {
+        margin: 10px 0 0 0;
+    }
+
+    .search input {
+
+        width: 95vw;
+
+    }
+}
