@@ -16,12 +16,12 @@ app.use(cors())                                 // to share data within two port
 
 // routes 
 
-app.use(router)
-router.post('/',Addnote)
-router.get('/all',Getnote)
-router.get('/edit/:id',Getonenote) // path and callback function
-router.post('/all/:id',Deletenote)
-router.post('/edit/:id',Updatenote)
+
+app.post('/',Addnote)
+app.get('/all',Getnote)
+app.get('/edit/:id',Getonenote) // path and callback function
+app.post('/all/:id',Deletenote)
+app.post('/edit/:id',Updatenote)
 
 // listen server on port 7000
 app.listen(7000,(req,res)=>{
