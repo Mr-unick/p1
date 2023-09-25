@@ -23,6 +23,6 @@ router.get('/edit/:id',Getonenote) // path and callback function
 router.post('/all/:id',Deletenote)
 router.post('/edit/:id',Updatenote)
 
-// listen server on port 8000
+// listen server on port 7000
 app.listen(7000,(req,res)=>{
     console.log("server is running")})
